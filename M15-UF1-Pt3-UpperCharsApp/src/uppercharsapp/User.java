@@ -46,7 +46,7 @@ public class User {
      * @return name with vowel letters converted to capital letter
      */
     public String upperVowels(String name){
-        return "";
+        return "Probando";
     }
     /**
      * This method con
