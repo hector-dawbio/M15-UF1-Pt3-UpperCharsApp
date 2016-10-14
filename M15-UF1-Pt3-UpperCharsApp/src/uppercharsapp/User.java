@@ -25,7 +25,7 @@ public class User {
     }
     //Methods
     /**
-     * 
+     * @author Hector
      * @param name
      * @return 
      */
@@ -33,7 +33,7 @@ public class User {
         return 1;
     }
     /**
-     * 
+     * @author Marc
      * @param name
      * @return 
      */
@@ -41,15 +41,16 @@ public class User {
         return 1;
     }
     /**
-     * 
+     * @author Hector
      * @param name to convert
      * @return name with vowel letters converted to capital letter
      */
     public String upperVowels(String name){
-        return "probando";
+        return "";
     }
     /**
      * This method con
+     * @author Marc
      * @param name to convert
      * @return name with consonants converted to lowercase
      */
