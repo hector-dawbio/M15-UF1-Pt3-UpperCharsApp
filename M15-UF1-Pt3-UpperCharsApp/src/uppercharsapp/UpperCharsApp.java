@@ -9,13 +9,12 @@ package uppercharsapp;
  * @author hector
  */
 public class UpperCharsApp {
-    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         User user = new User();
-        String name="antonio";
+        String name="antonioANTONIO";
         //name = user.setName(name);
         System.out.println("Nombre: "+user.setName(name));
         System.out.println("N consonantes: "+user.countlConsonant(name));
@@ -25,5 +24,4 @@ public class UpperCharsApp {
         
         // TODO code application logic here
     }
-    
 }
