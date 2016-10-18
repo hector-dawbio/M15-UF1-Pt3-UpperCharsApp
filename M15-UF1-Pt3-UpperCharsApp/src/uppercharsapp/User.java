@@ -63,13 +63,19 @@ public class User {
      * @return name with vowel letters converted to capital letter
      */
     public String upperVowels(String name){
-        int counter=0;
+        String result="";
+        char c;
         for(int x=0;x<name.length();x++) {
             if (isVowel(name.charAt(x))){
-                Character.toUpperCase(name.charAt(x));
-            }      
+                c=Character.toUpperCase(name.charAt(x));
+                result+=c;
+            }
+            else{
+                c=name.charAt(x);
+                result+=c;
+            }
         }       
-	return name;
+	return result;
     }
     /**
      * This method con
@@ -78,12 +84,18 @@ public class User {
      * @return name with consonants converted to lowercase
      */
     public String lowerConsonants(String name){
-        int counter=0;
+        String result="";
+        char c;
         for(int x=0;x<name.length();x++) {
             if (!isVowel(name.charAt(x))){
-                Character.toLowerCase(name.charAt(x));
-            }      
+                c=Character.toLowerCase(name.charAt(x));
+                result+=c;
+            }
+            else{
+                c=name.charAt(x);
+                result+=c;
+            }
         }       
-	return name;
+	return result;
     }    
 }
