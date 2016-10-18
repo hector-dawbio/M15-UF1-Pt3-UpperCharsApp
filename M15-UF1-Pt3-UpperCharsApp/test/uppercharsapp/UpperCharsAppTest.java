@@ -4,42 +4,42 @@
  * and open the template in the editor.
  */
 package uppercharsapp;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
 /**
  *
  * @author hector
  */
 public class UpperCharsAppTest {
-    
-    public UpperCharsAppTest() {
+    static User user;    
+    @Test 
+    public void isVowelTest(){
+        user = new User();
+        assertFalse(true);
+        assertEquals("False", user.isVowel('c'));
     }
-    
-    @BeforeClass
-    public static void setUpClass() {
+    @Test
+    public void countlConsonantTest(){
+        user = new User();
+        assertEquals(2, user.countlConsonant("casa"));
     }
-    
-    @AfterClass
-    public static void tearDownClass() {
+    @Test 
+    public void countlVowelTest(){
+        user = new User();
+        assertEquals(2, user.countlVowel("casa"));
     }
-    
-    @Before
-    public void setUp() {
+    @Test 
+    public void upperVowelsTest(){
+        user = new User();
+        assertEquals("cAsA", user.upperVowels("casa"));
     }
-    
-    @After
-    public void tearDown() {
+    @Test 
+    public void lowerConsonantsTest(){
+        user = new User();
+        assertEquals("cAsA", user.lowerConsonants("CASA"));
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }
