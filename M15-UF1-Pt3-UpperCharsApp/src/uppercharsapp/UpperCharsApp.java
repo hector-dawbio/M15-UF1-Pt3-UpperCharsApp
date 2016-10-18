@@ -14,7 +14,7 @@ public class UpperCharsApp {
      */
     public static void main(String[] args) {
         User user = new User();
-        String name="antonioANTONIO";
+        String name="ANTONIO";
         //name = user.setName(name);
         System.out.println("Nombre: "+user.setName(name));
         System.out.println("N consonantes: "+user.countlConsonant(name));

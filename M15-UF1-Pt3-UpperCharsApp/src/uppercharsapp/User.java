@@ -24,15 +24,21 @@ public class User {
         return this.name;
     }
     //Methods
+     /**
+      * This method returns true if it finds a vowel and false if not
+      * @param c letter to compare with vowels
+      * @return 
+      */
     public boolean isVowel(char c){
         if ((Character.toLowerCase(c)=='a') || (Character.toLowerCase(c)=='e') || (Character.toLowerCase(c)=='i') || (Character.toLowerCase(c)=='o') || (Character.toLowerCase(c)=='u'))
             return true;
         else return false;		        
     }
     /**
+     * This method counts the consonants and save them to counter variable
      * @author Hector
      * @param name
-     * @return 
+     * @return the consonant's counter
      */
     public int countlConsonant(String name){
         int counter=0;
@@ -44,9 +50,10 @@ public class User {
 	return counter;
     }
     /**
+     * This method counts the vowels and save them to counter variable
      * @author Marc
      * @param name
-     * @return 
+     * @return vowel's counter
      */
     public int countlVowel(String name){
         int counter=0;
@@ -58,6 +65,7 @@ public class User {
 	return counter;
     }
     /**
+     * This method turns vowels(name) to capital letter
      * @author Hector
      * @param name to convert
      * @return name with vowel letters converted to capital letter
@@ -72,13 +80,13 @@ public class User {
             }
             else{
                 c=name.charAt(x);
-                result+=c;
+                result+= c;
             }
         }       
 	return result;
     }
     /**
-     * This method con
+     * This method turns consonants(name) to lower case
      * @author Marc
      * @param name to convert
      * @return name with consonants converted to lowercase
