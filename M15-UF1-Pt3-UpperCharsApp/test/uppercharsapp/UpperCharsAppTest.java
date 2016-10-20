@@ -19,8 +19,7 @@ public class UpperCharsAppTest {
     @Test 
     public void isVowelTest(){
         user = new User();
-        assertFalse(true);
-        assertEquals("False", user.isVowel('c'));
+        assertTrue(user.isVowel('a'));
     }
     @Test
     public void countlConsonantTest(){

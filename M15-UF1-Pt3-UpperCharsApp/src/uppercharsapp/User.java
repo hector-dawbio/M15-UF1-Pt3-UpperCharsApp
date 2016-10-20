@@ -5,8 +5,8 @@
  */
 package uppercharsapp;
 /**
- * That program converts the vowel to capital letter and consonant to lowercase and count both
- * @author marc &hector
+ * @author Marc Albert Bas Francisco
+ * @author Hector Garcia Guillen
  */
 public class User {
     private String name;
@@ -25,9 +25,10 @@ public class User {
     }
     //Methods
      /**
+      * @author Hector
       * This method returns true if it finds a vowel and false if not
       * @param c letter to compare with vowels
-      * @return 
+      * @return true if the letter is a vowel, else returns false
       */
     public boolean isVowel(char c){
         if ((Character.toLowerCase(c)=='a') || (Character.toLowerCase(c)=='e') || (Character.toLowerCase(c)=='i') || (Character.toLowerCase(c)=='o') || (Character.toLowerCase(c)=='u'))
@@ -37,8 +38,8 @@ public class User {
     /**
      * This method counts the consonants and save them to counter variable
      * @author Hector
-     * @param name
-     * @return the consonant's counter
+     * @param name to count it's consonants
+     * @return the number of consonants in the name
      */
     public int countlConsonant(String name){
         int counter=0;
@@ -52,8 +53,8 @@ public class User {
     /**
      * This method counts the vowels and save them to counter variable
      * @author Marc
-     * @param name
-     * @return vowel's counter
+     * @param name to count it's vowels
+     * @return the number of vowels in the name
      */
     public int countlVowel(String name){
         int counter=0;
